@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#336799"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/essinew" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_below="@+id/ivlogo"
+        android:layout_centerInParent="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilname"
+            android:layout_centerHorizontal="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#d3d3d3"
+                android:textColor="#FFFFFF"
+                android:hint="Name"
+                android:textSize="20dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/llmob"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="40dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="+91"
+                android:textSize="20dp"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:id="@+id/tilmobile">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#d3d3d3"
+                    android:hint="Mobile Number"
+                    android:textSize="20dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/butcontinue"
+        android:layout_width="300dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit1"
+        android:text="Continue" />
+
+</LinearLayout>
